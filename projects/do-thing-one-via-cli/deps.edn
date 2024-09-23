@@ -1,0 +1,6 @@
+{:deps    {org.clojure/clojure {:mvn/version "1.11.1"}
+           poly/cli            {:local/root "../../bases/cli"}
+           poly/do-thing       {:local/root "../../components/do-thing-one"}}
+
+ :aliases {:test {:extra-paths []
+                  :extra-deps  {}}}}

@@ -1,8 +1,12 @@
-{:aliases  {:dev {:extra-paths ["development/src"]
+{:aliases {:dev      {:extra-paths ["development/src"]
 
-                  :extra-deps {org.clojure/clojure {:mvn/version "1.11.1"}}}
-
-            :test {:extra-paths []}
-
-            :poly {:main-opts ["-m" "polylith.clj.core.poly-cli.core"]
-                   :extra-deps {polylith/clj-poly {:mvn/version "0.2.19"}}}}}
+                      :extra-deps  {poly/maybe-depended-upon {:local/root "components/maybe-depended-upon"}
+                                    poly/cli                 {:local/root "bases/cli"}
+                                    org.clojure/clojure      {:mvn/version "1.11.1"}}}
+           :test     {:extra-paths ["components/maybe-depended-upon/test"]}
+           :poly     {:main-opts  ["-m" "polylith.clj.core.poly-cli.core"]
+                      :extra-deps {polylith/clj-poly {:mvn/version "0.2.19"}}}
+           :+default {:extra-deps  {poly/do-thing {:local/root "components/do-thing-one"}}
+                      :extra-paths ["components/do-thing-one/test"]}
+           :+dt2     {:extra-deps  {poly/do-thing {:local/root "components/do-thing-two"}}
+                      :extra-paths ["components/do-thing-two/test"]}}}

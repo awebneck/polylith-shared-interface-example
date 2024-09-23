@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bases/cli/cli.iml" filepath="$PROJECT_DIR$/bases/cli/cli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/components/do-thing-two/do-thing-two.iml" filepath="$PROJECT_DIR$/components/do-thing-two/do-thing-two.iml" />
+      <module fileurl="file://$PROJECT_DIR$/components/maybe-depended-upon/maybe-depended-upon.iml" filepath="$PROJECT_DIR$/components/maybe-depended-upon/maybe-depended-upon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shared-int-example.iml" filepath="$PROJECT_DIR$/shared-int-example.iml" />
+    </modules>
+  </component>
+</project>

@@ -6,4 +6,6 @@
        :auto-add false}
  :tag-patterns {:stable "stable-*"
                 :release "v[0-9]*"}
- :projects {"development" {:alias "dev"}}}
+ :projects {"development" {:alias "dev"}
+            "do-thing-one-via-cli" {:alias "dt1"}
+            "do-thing-two-via-cli" {:alias "dt2"}}}
